@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M. Sirojul Anam - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#cdf5fd",
+            },
+            animation: {
+              fade: "fadeIn 1s ease-in-out",
+              bounceIn: "bounceIn 1s ease",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: 0 },
+                "100%": { opacity: 1 },
+              },
+              bounceIn: {
+                "0%, 100%": { transform: "translateY(-10%)", opacity: 0 },
+                "50%": { transform: "translateY(0)", opacity: 1 },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-primary text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Sirojul</h1>
+      <ul class="flex gap-6">
+        <li><a href="#" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+      <a
+        href="#contact"
+        class="px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition"
+        >Contact Me</a
+      >
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-white animation-fade">
+      <p class="text-lg">Hi!</p>
+      <h2 class="text-4xl font-bold">I'm M. Sirojul Anam</h2>
+      <p class="text-2xl text-blue-500">&lt;Software Developer&gt;</p>
+      <p class="mt-4 max-w-xl mx-auto">
+        Saya adalah fullstack developer berpengalaman dalam membangun aplikasi
+        web modern dengan performa tinggi dan desain minimalis.
+      </p>
+      <div class="mt-6 flex justify-center gap-4">
+        <a
+          href="#contact"
+          class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+          >Contact me</a
+        >
+        <a
+          href="#"
+          class="px-6 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition"
+          >Download CV</a
+        >
+      </div>
+      <div class="mt-4 flex justify-center gap-4 text-xl">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="mt-10">
+        <div
+          class="w-40 h-40 bg-blue-300 rounded-lg shadow-lg mx-auto animate-bounceIn"
+        >
+          <img src="./img/m_sirojul_anam.png" alt="M Sirojul Anam" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-12 bg-primary flex justify-center">
+      <div class="flex gap-10 flex-wrap justify-center">
+        <img
+          src="https://img.icons8.com/color/48/angularjs.png"
+          alt="Angular"
+        />
+        <img src="https://img.icons8.com/color/48/nestjs.png" alt="NestJS" />
+        <img
+          src="https://img.icons8.com/color/48/tailwind_css.png"
+          alt="Tailwind"
+        />
+        <img
+          src="https://img.icons8.com/color/48/typescript.png"
+          alt="TypeScript"
+        />
+        <img
+          src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/mongodb.png"
+          alt="MongoDB"
+        />
+        <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="MySQL" />
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-12 text-center bg-white">
+      <h3 class="text-2xl font-bold mb-8">Projects</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
+        <a href="https://github.com/m-sirojul-anam/fe-math-cool">
+          <div
+            class="bg-primary h-40 rounded-lg flex justify-center items-center"
+          >
+            MathCool
+          </div>
+        </a>
+        <a href="https://github.com/m-sirojul-anam/crud-product">
+          <div
+            class="bg-primary h-40 rounded-lg flex justify-center items-center"
+          >
+            Crud Product
+          </div>
+        </a>
+        <div
+          class="bg-gray-400 h-40 rounded-lg flex justify-center items-center"
+        >
+          Coming Soon...
+        </div>
+        <div
+          class="bg-gray-400 h-40 rounded-lg flex justify-center items-center"
+        >
+          Coming Soon...
+        </div>
+        <div
+          class="bg-gray-400 h-40 rounded-lg flex justify-center items-center"
+        >
+          Coming Soon...
+        </div>
+        <div
+          class="bg-gray-400 h-40 rounded-lg flex justify-center items-center"
+        >
+          Coming Soon...
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 bg-white">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
+        <div>
+          <iframe
+            title="google maps"
+            src="https://maps.google.com/maps?q=jakarta&t=&z=10&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-64 rounded-lg"
+          ></iframe>
+        </div>
+        <div>
+          <a href="https://wa.me/6283824515757">
+            <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
+          </a>
+          <form class="flex flex-col gap-4">
+            <input type="text" placeholder="Name" class="border p-2 rounded" />
+            <input
+              type="email"
+              placeholder="Email"
+              class="border p-2 rounded"
+            />
+            <textarea
+              placeholder="Message"
+              class="border p-2 rounded h-32"
+            ></textarea>
+            <a href="https://wa.me/6283824515757"> </a>
+            <button
+              class="bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 bg-primary">
+      <p>&copy; 2025 Sirojul</p>
+    </footer>
+  </body>
+</html>
